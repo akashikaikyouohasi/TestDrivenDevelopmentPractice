@@ -8,6 +8,22 @@ namespace TestDrivenDevelopmentPractice
 {
     public class Dollar
     {
+        /*
+         * This class deal with dollas.
+         */
 
+        public int amount;
+
+        //Constructor that takes one argument
+        public Dollar(int amount)
+        {
+
+        }
+
+        // Perfome multiplication
+        public void times(int multiplier)
+        {
+
+        }
     }
 }
