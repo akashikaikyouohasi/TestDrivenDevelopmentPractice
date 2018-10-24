@@ -12,7 +12,7 @@ namespace TestDrivenDevelopmentPractice
          * This class deal with dollas.
          */
 
-        public int amount;
+        public int amount = 10;
 
         //Constructor that takes one argument
         public Dollar(int amount)
