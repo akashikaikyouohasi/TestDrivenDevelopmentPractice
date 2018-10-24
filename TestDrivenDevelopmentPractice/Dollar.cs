@@ -17,13 +17,13 @@ namespace TestDrivenDevelopmentPractice
         //Constructor that takes one argument
         public Dollar(int amount)
         {
-
+            this.amount = amount;
         }
 
         // Perfome multiplication
         public void Times(int multiplier)
         {
-            amount = 5 * 2;
+            amount = amount * 2;
         }
     }
 }
