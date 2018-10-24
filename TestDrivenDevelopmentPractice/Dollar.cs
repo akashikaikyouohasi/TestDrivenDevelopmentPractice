@@ -23,7 +23,7 @@ namespace TestDrivenDevelopmentPractice
         // Perfome multiplication
         public void Times(int multiplier)
         {
-            amount = amount * 2;
+            amount *= multiplier;
         }
     }
 }
