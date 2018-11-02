@@ -10,6 +10,7 @@ namespace TestDrivenDevelopmentPractice
     {
         /*
          * This class deal with dollas.
+         * Value Object Pattern >> Instance value configured by Constructor must not change. Need equals().
          */
 
         public int amount;
