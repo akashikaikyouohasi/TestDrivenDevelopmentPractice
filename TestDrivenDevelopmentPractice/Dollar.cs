@@ -27,9 +27,11 @@ namespace TestDrivenDevelopmentPractice
             return new Dollar(amount * multiplier);
         }
 
+        //
         public override Boolean Equals(Object obj)
         {
-            return true;
+            Dollar dollar = (Dollar)obj;
+            return amount == dollar.amount;
         }
     }
 }
