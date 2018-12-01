@@ -13,7 +13,7 @@ namespace TestDrivenDevelopmentPractice
          * Value Object Pattern >> Instance value configured by Constructor must not change. Need equals().
          */
 
-        public int amount;
+        private int amount;
 
         //Constructor that takes one argument
         public Dollar(int amount)
