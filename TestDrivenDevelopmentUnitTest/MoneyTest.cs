@@ -35,5 +35,15 @@ namespace TestDrivenDevelopmentUnitTest
             Assert.IsTrue(new Dollar(5).Equals(new Dollar(5)));
             Assert.IsFalse(new Dollar(5).Equals(new Dollar(6)));
         }
+
+        [TestMethod]
+        public void TestFrancMultiplication()
+        {
+            Franc five = new Franc(5);
+
+            Assert.AreEqual(new Franc(10), five.Times(2));
+            Assert.AreEqual(new Franc(15), five.Times(3));
+
+        }
     }
 }
