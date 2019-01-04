@@ -6,14 +6,12 @@ using System.Threading.Tasks;
 
 namespace TestDrivenDevelopmentPractice
 {
-    public class Dollar
+    public class Dollar : Money
     {
         /*
          * This class deal with dollas.
          * Value Object Pattern >> Instance value configured by Constructor must not change. Need equals().
          */
-
-        private int amount;
 
         //Constructor that takes one argument
         public Dollar(int amount)
@@ -27,11 +25,6 @@ namespace TestDrivenDevelopmentPractice
             return new Dollar(amount * multiplier);
         }
 
-        //
-        public override Boolean Equals(Object obj)
-        {
-            Dollar dollar = (Dollar)obj;
-            return amount == dollar.amount;
-        }
+
     }
 }
