@@ -20,34 +20,34 @@ namespace TestDrivenDevelopmentUnitTest
         [TestMethod]
         public void TestMultiplication()
         {
-            Dollar five = new Dollar(5);
+            Money five = Money.dollar(5);
 
             //Equalメソッドを実装したので、参照の比較ではなく実装したメソッドにて比較が行われる。
-            Assert.AreEqual(new Dollar(10), five.Times(2));
+            Assert.AreEqual(Money.dollar(10), five.Times(2));
 
-            Assert.AreEqual(new Dollar(15), five.Times(3));
+            Assert.AreEqual(Money.dollar(15), five.Times(3));
         
         }
 
         [TestMethod]
         public void TestEquality()
         {
-            Assert.IsTrue(new Dollar(5).Equals(new Dollar(5)));
-            Assert.IsFalse(new Dollar(5).Equals(new Dollar(6)));
+            Assert.IsTrue(Money.dollar(5).Equals(Money.dollar(5)));
+            Assert.IsFalse(Money.dollar(5).Equals(Money.dollar(6)));
 
-            Assert.IsTrue(new Franc(5).Equals(new Franc(5)));
-            Assert.IsFalse(new Franc(5).Equals(new Franc(6)));
+            Assert.IsTrue(Money.franc(5).Equals(Money.franc(5)));
+            Assert.IsFalse(Money.franc(5).Equals(Money.franc(6)));
 
-            Assert.IsFalse(new Franc(5).Equals(new Dollar(5)));
+            Assert.IsFalse(Money.franc(5).Equals(Money.dollar(5)));
         }
 
         [TestMethod]
         public void TestFrancMultiplication()
         {
-            Franc five = new Franc(5);
+            Franc five = Money.franc(5);
 
-            Assert.AreEqual(new Franc(10), five.Times(2));
-            Assert.AreEqual(new Franc(15), five.Times(3));
+            Assert.AreEqual(Money.franc(10), five.Times(2));
+            Assert.AreEqual(Money.franc(15), five.Times(3));
 
         }
     }
